@@ -8,15 +8,14 @@
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    background-color: #F5F5FA;
+    background-color: rgba(245, 245, 250, 0.2);
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
     font-size: 12px;
     font-weight: 700;
-    line-height: 1.2;
-    color: #B3B3BA;
-    z-index: 6;
+    line-height: var(--main-line-height);
+    z-index: 99;
     gap: 146px;
   }
 
@@ -32,28 +31,31 @@
   }
   .nav_link {
     text-decoration: none;
-    color: #B3B3BA;
+    color: #fff;
+
   }
+
   .contacts_phone {
     font-size: 16px;
     margin: 0;
     text-decoration: none;
-    color: #B3B3BA;
+    color: #fff;
 
   }
 
   .header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     padding-top: 60px;
     padding-bottom: 15px;
     box-sizing: border-box;
-    z-index: -1;
+    z-index: 50;
 
 
     &__toggler {
@@ -66,7 +68,7 @@
     }
 
     span {
-      background: #323264;
+      background: #fff;
       width: 100%;
       height: 1px;
       display: block;
@@ -87,10 +89,11 @@
       }
     }
 
+
     &__nav {
       position: fixed;
       left: 0;
-      top: 0;
+      bottom: 0;
       width: 100%;
       height: 100%;
       display: none;
@@ -102,41 +105,46 @@
       line-height: var(--main-line-height);
 
 
-
-      &-list {
+      &-list-wrapper {
         box-sizing: border-box;
-        position: absolute;
-        bottom: 0;
         width: 100%;
-        margin: auto 8px 0 8px;
-        padding: 71px 12px 19px 12px;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 29px;
+        margin-top: auto;
+        padding: 0 12px 19px 12px;
         background-color: #fff;
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
 
+      }
 
+      &-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        gap: 29px;
+      }
+
+      &-list li {
+        width: 100%
       }
 
       &-link {
+        display: flex;
+        width: 100%;
+        justify-content: center;
         box-sizing: border-box;
-        color: #24A3FF;
+        color: #24a3ff;
         font-size: 24px;
         font-weight: 700;
         text-decoration: none;
-        background-color: #F5F5FA;
+        background-color: #f5f5fa;
         padding-top: 7px;
         padding-bottom: 7px;
-        width: 100%;
-        border-radius: 12px;
-
+        border-radius: 12px
       }
     }
 
@@ -144,23 +152,51 @@
       display: flex;
     }
 
+    .nav__closebtn {
+      width: 24px;
+      height: 15px;
+      display: block;
+      position: relative;
+      z-index: 99;
+      margin: 19px 19px 27px auto;
 
-    #nav-toggler:checked ~ &__toggler {
-      span {
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        background-color: #EC6F5D;
-        transform: translate(-50%, -50%) rotate(225deg);
+    }
 
+    .nav__closebtn span {
+      height: 1px;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      background-color: #ec6f5d;
+      transform: translate(-50%, -50%) rotate(225deg)
+    }
 
-        &:nth-child(2) {
-          transform: translate(-50%, -50%) rotate(-225deg);
-        }
-      }
+    .nav__closebtn span:nth-child(2) {
+      width: 18px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-225deg)
+    }
+
+    &__slogan {
+      display: block;
+      font-size: 38px;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      margin: 139px 30px 159px 30px;
+      max-width: 100%;
+
+    }
+    &__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
     }
   }
-
   .logo {
     display: block;
     width: 70px;
@@ -172,14 +208,12 @@
     height: 26px;
   }
 
-  span {
-    background: #323264;
-  }
-
-  .logo_about {
+  .logo_title {
+    font-weight: 400;
     line-height: 1.2;
     font-size: 20px;
-    color: #323264;
+    color: #fff;
+    text-decoration: none;
   }
   .logo_group {
     display: flex;
@@ -187,6 +221,15 @@
     justify-content: space-between;
     gap: 4px;
   }
+  .header__toggler:focus, .header__toggler:hover {
+    background-color: #E6E6F0;
+    cursor: pointer;
+  }
+  .header__toggler-list:focus, .header__toggler-list:hover {
+    background-color: #E6E6F0;
+    cursor: pointer;
+  }
+
 
 
 }
