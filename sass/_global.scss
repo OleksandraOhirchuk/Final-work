@@ -6,8 +6,8 @@
 
 
   .center {
-    padding-left: calc(50vw - 165px);
-    padding-right: calc(50vw - 165px);
+    padding-left: calc(50vw - 157px);
+    padding-right: calc(50vw - 157px);
   }
   img {
     display: block;
@@ -39,6 +39,10 @@
     background: var(--background-gradient);
 
   }
+a {
+  text-decoration: none;
+}
+
 }
 
 
