@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 520px) {
   body {
     font-family: 'Montserrat', sans-serif;
 
@@ -35,5 +35,10 @@
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
   }
+  .gradient_block {
+    background: var(--background-gradient);
 
+  }
 }
+
+

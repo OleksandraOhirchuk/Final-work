@@ -1,0 +1,52 @@
+@media screen and (max-width: 520px) {
+  .team {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+&__box {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+}
+    &__title {
+      display: grid;
+      grid-template-columns: 75px 8px 1fr;
+      row-gap: 2px;
+      align-items: center;
+      justify-content: left;
+      margin-top: 30px;
+
+
+    }
+    &__people {
+
+      font-size: 14px;
+      font-weight: 700;
+      color: #24A3FF;
+      letter-spacing: 1px;
+    }
+    &__text {
+      font-size: 30px;
+      font-weight: 700;
+      color: #F0145A;
+    }
+    &__subscribe {
+      font-weight: 700;
+      font-size: 16px;
+      color: #B3B3BA;
+      margin: 0 0 6px 0;
+    }
+    &__job {
+      font-weight: 400;
+      font-size: 14px;
+      color: #B3B3BA;
+      margin: 0;
+    }
+  }
+  .team__box>img {
+    width: 100%;
+  }
+
+
+}
