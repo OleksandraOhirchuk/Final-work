@@ -9,7 +9,7 @@
 
     &__title {
       display: grid;
-      grid-template-columns: 75px 8px 1fr;
+      grid-template-columns: 80px 8px 1fr;
       row-gap: 10px;
       flex-direction: row;
       align-items: center;
@@ -23,12 +23,14 @@
       font-weight: 700;
       line-height: var(--main-line-height);
 
+
     }
     &__nav {
       font-weight: 700;
       font-size: 14px;
       letter-spacing: 1px;
       color: #24A3FF;
+      text-transform: uppercase;
     }
 
 

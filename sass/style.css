@@ -1,6 +1,7 @@
 @media screen and (max-width: 520px) {
   body {
     font-family: "Montserrat", sans-serif;
+    background-color: #fff;
   }
   .center {
     padding-left: calc(50vw - 157px);
@@ -33,6 +34,9 @@
   }
   .gradient_block {
     background: var(--background-gradient);
+  }
+  .color_block {
+    background-color: #F5F5FA;
   }
   a {
     text-decoration: none;
@@ -312,7 +316,7 @@
   }
   .services__title {
     display: grid;
-    grid-template-columns: 75px 8px 1fr;
+    grid-template-columns: 80px 8px 1fr;
     row-gap: 10px;
     flex-direction: row;
     align-items: center;
@@ -330,6 +334,7 @@
     font-size: 14px;
     letter-spacing: 1px;
     color: #24A3FF;
+    text-transform: uppercase;
   }
   .services__list-desc {
     color: #fff;
@@ -346,8 +351,12 @@
 }
 @media screen and (max-width: 520px) {
   .team {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0;
+  }
+  .team > img {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
   }
   .team__box {
     margin: 0;
@@ -356,7 +365,7 @@
   }
   .team__title {
     display: grid;
-    grid-template-columns: 75px 8px 1fr;
+    grid-template-columns: 90px 8px 1fr;
     row-gap: 2px;
     align-items: center;
     justify-content: left;
@@ -367,6 +376,7 @@
     font-weight: 700;
     color: #24A3FF;
     letter-spacing: 1px;
+    text-transform: uppercase;
   }
   .team__text {
     font-size: 30px;
@@ -377,7 +387,7 @@
     font-weight: 700;
     font-size: 16px;
     color: #B3B3BA;
-    margin: 0 0 6px 0;
+    margin: 30px 0 6px 0;
   }
   .team__job {
     font-weight: 400;
@@ -398,15 +408,18 @@
   }
   .companies__title {
     margin-bottom: 30px;
+    color: #323264;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
-    color: #323264;
+    text-align: center;
   }
 }
 @media screen and (max-width: 520px) {
   .publications__title-box {
     display: grid;
-    grid-template-columns: 105px 8px 1fr;
+    grid-template-columns: 125px 8px 1fr;
     row-gap: 2px;
     align-items: center;
     justify-content: left;
@@ -419,6 +432,7 @@
     letter-spacing: 1px;
     color: #24A3FF;
     text-decoration: none;
+    text-transform: uppercase;
   }
   .publications__main {
     font-weight: 700;
@@ -427,7 +441,11 @@
     margin-bottom: 30px;
   }
   .publications__article {
-    padding: 0 30px 30px 30px;
+    margin: 0 0 30px 0;
+    background-color: #fff;
+  }
+  .publications__article img {
+    margin: auto;
   }
   .publications__article-name {
     font-weight: 700;
@@ -435,17 +453,79 @@
     color: #24A3FF;
     margin-top: 30px;
   }
-  .publications__date {
+  .publications__article-name, .publications__article-date, .publications__article-desc {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .publications__article-date {
     font-size: 12px;
     font-weight: 700;
     color: #B3B3BA;
-    margin: 15px 0;
+    padding: 15px 30px;
+    margin: 0;
   }
-  .publications__desc {
+  .publications__article-desc {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.6;
     color: #000;
+    padding-bottom: 30px;
+    margin: 0;
+  }
+  .publications__article-desc::before {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: #E6E6F0;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 0;
+    margin: 0 30px;
+    border-top: 2px solid #E6E6F0;
+  }
+  .footer p {
+    margin: 0;
+  }
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .footer__contacts-tel {
+    color: #46466E;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .footer__contacts-email {
+    font-weight: 700;
+    font-size: 16px;
+    color: #24A3FF;
+  }
+  .footer__contacts-copywright {
+    color: #B3B3BA;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .footer__map {
+    color: #24A3FF;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
   }
 }
 
