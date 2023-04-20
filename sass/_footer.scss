@@ -5,9 +5,17 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 30px 0;
-    margin: 0 30px;
-    border-top: 2px solid #E6E6F0;
+    padding: 30px 30px;
+
+
+    &:before {
+      content: "";
+      display: block;
+      height: 2px;
+      background-color: #E6E6F0;
+      margin: 0 0 30px;
+      width: 315px;
+    }
 
     & p {
       margin: 0;
@@ -37,6 +45,10 @@
         font-size: 16px;
 
       }
+      &-icon {
+        width: 38px;
+        height: 38px;
+      }
     }
     &__map {
       color: #24A3FF;
@@ -44,7 +56,9 @@
       font-size: 12px;
       letter-spacing: 1px;
       text-transform: uppercase;
-      margin-bottom: 10px;
+
     }
+
   }
+
 }

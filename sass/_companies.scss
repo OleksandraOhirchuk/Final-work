@@ -15,5 +15,19 @@
     font-size: 14px;
     text-align: center;
   }
+  &__logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+  }
+  //&__logo-card {
+  //  display: flex;
+  //  flex-direction: column;
+  //  justify-content: center;
+  //  width: 100%;
+  //}
 }
 }

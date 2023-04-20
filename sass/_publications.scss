@@ -2,6 +2,8 @@
   .publications {
 
 
+
+
     &__title-box {
       display: grid;
       grid-template-columns: 125px 8px 1fr;
@@ -35,6 +37,12 @@
       margin: 0 0 30px 0;
       background-color: #fff;
 
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+
+
       & img {
         margin: auto;
       }
@@ -46,6 +54,7 @@
         margin-top: 30px;
 
       }
+
       &-name,
       &-date,
       &-desc {
@@ -53,6 +62,7 @@
         padding-right: 30px;
         padding-left: 30px;
       }
+
       &-date {
         font-size: 12px;
         font-weight: 700;
@@ -60,6 +70,7 @@
         padding: 15px 30px;
         margin: 0;
       }
+
       &-desc {
         font-weight: 400;
         font-size: 14px;
@@ -69,17 +80,17 @@
         margin: 0;
 
         &::before {
-            content: "";
+          content: "";
           display: block;
           height: 4px;
-            background-color: #E6E6F0;
-            padding-left: 30px;
-            padding-right: 30px;
+          background-color: #E6E6F0;
+          padding-left: 30px;
+          padding-right: 30px;
           margin-bottom: 15px;
-          }
         }
       }
     }
-
-
   }
+
+
+}

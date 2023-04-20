@@ -26,10 +26,14 @@
 <header class="header center">
     <section class="logo_group">
         <a href="#" class="logo">
-            <img src="img/Logologo.svg" alt="logo">
+            <svg class="logo_icon">
+                <use xlink:href="img/sprite.svg#Logo"></use>
+            </svg>
         </a>
         <a href="#" class="logo_slash">
-            <img src="img/Slash.svg" alt="logo">
+            <svg class="logo_slash__icon">
+                <use xlink:href="img/sprite.svg#Slash"></use>
+            </svg>
         </a>
         <a href="#" class="logo_title">
             services
@@ -181,31 +185,40 @@
         </section>
     </div>
     <div class="color_block">
-        <section class="center team">
+        <section class="center team" id="team">
             <div class="team__box">
                 <img src="img/photo_man.jpg" alt="photo_man">
                 <div class="team__title">
                     <a href="#">
                         <h6 class="team__people">команда</h6>
                     </a>
-
                     <svg class="vector" width="8" height="11" viewBox="0 0 8 11" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.5 1L6 5.5L1.5 10" stroke="#24A3FF" stroke-width="2"/>
                     </svg>
-
-
                 </div>
                 <h2 class="team__text">
                     Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у
                     ситуаціях, коли більшість безсилі.
                 </h2>
                 <p class="team__subscribe">
-                    Олександр <br>Олександровський</br>
+                    Олександр <br>Олександровський
                 </p>
                 <p class="team__job">
                     Керуючий партнер
                 </p>
+            </div>
+            <div class="btn">
+                <a class="btn__slider" href="#team">
+                    <button class="btn__circle" type="button">
+                    </button> </a>
+                <a class="btn__slider" href="#team">
+                    <button class="btn__circle" type="button">
+                    </button></a>
+                <a class="btn__slider" href="#team">
+                    <button class="btn__circle" type="button">
+                    </button>
+                </a>
             </div>
         </section>
         <section class="companies">
@@ -226,10 +239,10 @@
                     <img src="img/3dlook.svg" alt="3dlook">
                 </a>
                 <a href="index.html" target="_blank" class="companies_logo-card">
-                    <img src="img/orangegear.svg" alt="orangegear">
+                    <img src="img/orangear.svg" alt="orangegear">
                 </a>
                 <a href="index.html" target="_blank" class="companies_logo-card">
-                    <img src="img/abtelligent.svg" alt="abtelligent">
+                    <img src="img/adtelligent.svg" alt="abtelligent">
                 </a>
             </div>
         </section>
@@ -303,9 +316,8 @@
         On map
     </a>
     <div class="footer__contacts">
-        <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z"
-                  fill="#24A3FF"/>
+        <svg class="footer__contacts-icon">
+            <use xlink:href="img/sprite.svg#Facebook-Footer"></use>
         </svg>
         <p class="footer__contacts-tel">
             0800 211 927
