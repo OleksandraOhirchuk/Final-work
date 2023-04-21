@@ -19,6 +19,9 @@
         <li><a class="nav_link" href="#">РУ</a></li>
         <li><a class="nav_link" href="#">EN</a></li>
     </ul>
+<!--    <div class="nav__address">-->
+<!--        Kyiv, Mechnikova str., 14/1-->
+<!--    </div>-->
     <a href="#" class="contacts_phone">
         0800 211 927
     </a>
@@ -44,7 +47,6 @@
         <label for="nav-toggler" class="header__toggler">
             <span></span><span></span><span></span>
         </label>
-
         <nav class="header__nav">
             <div class="header__nav-list-wrapper">
                 <label for="nav-toggler" class="nav__closebtn">
@@ -60,13 +62,15 @@
             </div>
         </nav>
     </section>
-
     <section class="header__title">
         <h1 class="header__slogan">
             you legal solutions provider
         </h1>
-        <a class="scroll_vert" href="#">
-            <img src="img/scroll.svg" alt="scroll">
+        <a class="scroll" href="#services">
+            <svg class="scroll__vert" width="20" height="12" viewBox="0 0 20 12" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L10 10L19 1" stroke-width="2"/>
+            </svg>
         </a>
     </section>
 </header>
@@ -94,7 +98,7 @@
                 </div>
             </article>
         </section>
-        <section class="services center">
+        <section class="services center" id="services">
             <div class="services__title">
                 <a href="#">
                     <h6 class="services__nav">Services</h6>
@@ -184,10 +188,11 @@
             </article>
         </section>
     </div>
+    <!--    <div class="rectangle center"></div>-->
     <div class="color_block">
         <section class="center team" id="team">
             <div class="team__box">
-                <img src="img/photo_man.jpg" alt="photo_man">
+                <img src="img/photo_man_mobile.jpg" alt="photo_man">
                 <div class="team__title">
                     <a href="#">
                         <h6 class="team__people">команда</h6>
@@ -211,10 +216,12 @@
             <div class="btn">
                 <a class="btn__slider" href="#team">
                     <button class="btn__circle" type="button">
-                    </button> </a>
+                    </button>
+                </a>
                 <a class="btn__slider" href="#team">
                     <button class="btn__circle" type="button">
-                    </button></a>
+                    </button>
+                </a>
                 <a class="btn__slider" href="#team">
                     <button class="btn__circle" type="button">
                     </button>
@@ -316,11 +323,13 @@
         On map
     </a>
     <div class="footer__contacts">
+        <a href="https://www.facebook.com/">
         <svg class="footer__contacts-icon">
             <use xlink:href="img/sprite.svg#Facebook-Footer"></use>
         </svg>
+        </a>
         <p class="footer__contacts-tel">
-            0800 211 927
+            <a class="footer__contacts-number" href="tel:0800 211 927">0800 211 927</a>
         </p>
         <a class="footer__contacts-email" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
     </div>

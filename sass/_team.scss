@@ -1,6 +1,7 @@
 @media screen and (max-width: 520px) {
   .team {
-    margin: 30px 0;
+background-color: #fff;
+
 
     & > img {
       width: 100%;
@@ -12,6 +13,9 @@
       margin: 0;
       display: flex;
       flex-direction: column;
+      background-color: #EDEDF7;
+      padding-bottom: 30px;
+
 
     }
 
@@ -24,6 +28,13 @@
       margin-top: 30px;
 
 
+    }
+    &__title,
+    &__text,
+    &__subscribe,
+    &__job {
+      padding-right: 30px;
+      padding-left: 30px;
     }
 
     &__people {
@@ -56,37 +67,40 @@
       color: #B3B3BA;
       margin: 0;
     }
-  }
-  .team__box > img {
-    width: 100%;
-  }
-  .btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    gap: 15px;
-
-    &__circle {
-      border-radius: 50%;
-      display: block;
-      cursor: pointer;
-      background-color: #24A3FF;
-      width: 16px;
-      height: 16px;
-      border: none;
-    }
 
   }
-  .btn__slider {
-    opacity: 0.2;
-  }
-  .btn__slider:visited,
-  .btn__slider:hover {
+
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 15px;
+
+  &__circle {
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
     background-color: #24A3FF;
-    opacity: 1;
+    width: 16px;
+    height: 16px;
+    border: none;
   }
+
+}
+
+.btn__slider {
+  opacity: 0.2;
+}
+
+.btn__slider:visited,
+.btn__slider:hover {
+  background-color: #24A3FF;
+  opacity: 1;
+}
+
 }
 
 
