@@ -1,4 +1,4 @@
-@media screen and (max-width: 520px) {
+@media screen and (min-width: 315px) {
   .team {
 background-color: #fff;
 
@@ -44,6 +44,7 @@ background-color: #fff;
       color: #24A3FF;
       letter-spacing: 1px;
       text-transform: uppercase;
+      padding-bottom: 5px;
     }
 
     &__text {
@@ -100,9 +101,30 @@ background-color: #fff;
   background-color: #24A3FF;
   opacity: 1;
 }
+  .photo_man {
+    display: none;
+  }
 
 }
+@media screen and (min-width: 520px) {
 
+  .photo_man_mobile {
+    display: none;
+  }
+  .photo_man {
+    display: unset;
+
+  }
+
+  .team__text {
+    font-size: 38px;
+  }
+  .team__box {
+    margin-left: 60px;
+    margin-right: 60px;
+
+  }
+}
 
 
 

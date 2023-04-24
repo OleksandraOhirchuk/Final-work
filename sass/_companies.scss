@@ -1,34 +1,51 @@
-@media screen and (max-width: 520px) {
-.companies {
-  padding-top: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #fff;
-
-
-  &__title {
-    margin-bottom: 30px;
-    color: #323264;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    text-align: center;
-  }
-  &__logo-container {
+@media screen and (min-width: 315px) {
+  .companies {
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: auto;
+    background-color: #fff;
+
+
+    &__title {
+      margin-bottom: 30px;
+      color: #323264;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+
+    }
+
+    &__logo-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+
+    }
+  }
+}
+  .companies__logo-container-2 {
+    display: none;
+}
+@media screen and (min-width: 520px) {
+  .companies__logo-container-2 {
+    display: unset;
 
   }
-  //&__logo-card {
-  //  display: flex;
-  //  flex-direction: column;
-  //  justify-content: center;
-  //  width: 100%;
-  //}
+  .companies__logo-container-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .companies__logo-container-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
 }
-}
+

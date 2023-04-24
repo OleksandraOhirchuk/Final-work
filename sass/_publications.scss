@@ -1,7 +1,5 @@
-@media screen and (max-width: 520px) {
+@media screen and (min-width: 315px) {
   .publications {
-
-
 
 
     &__title-box {
@@ -40,7 +38,6 @@
       &:last-child {
         margin-bottom: 0;
       }
-
 
 
       & img {
@@ -92,5 +89,38 @@
     }
   }
 
+
+}
+
+@media screen and (min-width: 520px) {
+  .publications__main {
+    font-size: 38px;
+  }
+  .publications__main br {
+    display: none;
+  }
+  .publications__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin: 0 60px ;
+  }
+  .publications__article:last-child {
+    grid-column: 1 / span 2;
+  }
+  .photo_people {
+    height: 200px;
+    overflow: hidden;
+    margin: 0;
+
+  }
+  .publications__article:last-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .publications__article {
+    margin: 0;
+  }
 
 }

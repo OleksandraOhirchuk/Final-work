@@ -19,13 +19,36 @@
         <li><a class="nav_link" href="#">РУ</a></li>
         <li><a class="nav_link" href="#">EN</a></li>
     </ul>
-<!--    <div class="nav__address">-->
-<!--        Kyiv, Mechnikova str., 14/1-->
-<!--    </div>-->
+    <div class="nav__dot">
+        <svg width="6" height="7" viewBox="0 0 6 7" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="3" cy="3.5" r="3"/>
+        </svg>
+    </div>
+    <div class="nav__address">
+        Kyiv, Mechnikova str., 14/1
+    </div>
+    <div class="nav__dot">
+        <svg width="6" height="7" viewBox="0 0 6 7" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="3" cy="3.5" r="3"/>
+        </svg>
+    </div>
     <a href="#" class="contacts_phone">
         0800 211 927
     </a>
+    <div class="nav__dot">
+        <svg width="6" height="7" viewBox="0 0 6 7" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="3" cy="3.5" r="3"/>
+        </svg>
+    </div>
+    <div class="nav__facebook">
+        <a class="nav__facebook-link" href="https://www.facebook.com/">
+            <svg class="nav__facebook-icon">
+                <use xlink:href="img/sprite.svg#Facebook-Header"></use>
+            </svg>
+        </a>
+    </div>
 </nav>
+
 <header class="header center">
     <section class="logo_group">
         <a href="#" class="logo">
@@ -42,7 +65,7 @@
             services
         </a>
     </section>
-    <section>
+    <section class="burger_menu">
         <input type="checkbox" class="visually-hidden" id="nav-toggler">
         <label for="nav-toggler" class="header__toggler">
             <span></span><span></span><span></span>
@@ -61,6 +84,15 @@
                 </ul>
             </div>
         </nav>
+    </section>
+    <section class="burger_menu_none">
+        <ul class="header__nav-list">
+            <li><a class="header__nav-link" href="#">about us</a></li>
+            <li><a class="header__nav-link" href="#">послуги</a></li>
+            <li><a class="header__nav-link" href="#">команда</a></li>
+            <li><a class="header__nav-link" href="#">публікації</a></li>
+            <li><a class="header__nav-link" href="#">контакти</a></li>
+        </ul>
     </section>
     <section class="header__title">
         <h1 class="header__slogan">
@@ -112,78 +144,87 @@
                     What can we do better than others?
                 </h2>
             </div>
-            <article class="services__list">
-                <img src="img/Icon_hand_bag.svg" alt="hand_bag">
-                <h3 class="services__list-title">
-                    IT and e-commerce
-                </h3>
-                <div class="services__list-desc">
-                    An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts
-                    you
-                    from doing business. But there is not much work to do to hire an in-house lawyer.
-                </div>
-            </article>
 
-            <article class="services__list">
-                <img src="img/Icon_bag.svg" alt="bag">
-                <h3 class="services__list-title">
-                    Comprehensive daily
-                    legal support
-                </h3>
-                <div class="services__list-desc">
-                    In addition, over time, the work will become the same type and uninteresting for a full-time lawyer.
-                    And
-                    we know very well how difficult it is to find a good candidate with experience in the field of
-                    information technology in Ukraine.
-                </div>
-            </article>
 
-            <article class="services__list">
-                <img src="img/Icon_sun.svg" alt="sun">
-                <h3 class="services__list-title">
-                    Structuring corporate relationships
-                </h3>
-                <div class="services__list-desc">
-                    Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into
-                    the
-                    daily life of your company.
+            <article class="services__box">
+                <div class="services__list">
+                    <img src="img/Icon_hand_bag.svg" alt="hand_bag">
+                    <h3 class="services__list-title">
+                        IT and e-commerce
+                    </h3>
+                    <div class="services__list-desc">
+                        An endless stream of contracts, tax issues, labor relations, corporate papers - legal work
+                        distracts
+                        you
+                        from doing business. But there is not much work to do to hire an in-house lawyer.
+                    </div>
                 </div>
-            </article>
 
-            <article class="services__list">
-                <img src="img/Icon_hands.svg" alt="hands">
-                <h3 class="services__list-title">
-                    Building contractual relations
-                </h3>
-                <div class="services__list-desc">
-                    Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into
-                    the
-                    daily life of your company.
+                <div class="services__list">
+                    <img src="img/Icon_bag.svg" alt="bag">
+                    <h3 class="services__list-title">
+                        Comprehensive daily
+                        legal support
+                    </h3>
+                    <div class="services__list-desc">
+                        In addition, over time, the work will become the same type and uninteresting for a full-time
+                        lawyer.
+                        And
+                        we know very well how difficult it is to find a good candidate with experience in the field of
+                        information technology in Ukraine.
+                    </div>
                 </div>
-            </article>
 
-            <article class="services__list">
-                <img src="img/Icon_shield.svg" alt="shield">
-                <h3 class="services__list-title">
-                    Protection of business, intellectual property
-                </h3>
-                <div class="services__list-desc">
-                    And all the other time he will work on new diverse projects, so he will definitely not stop in
-                    professional development. One way or another, all Axon Partners will work for you instead of a
-                    corporate
-                    lawyer.
+                <div class="services__list">
+                    <img src="img/Icon_sun.svg" alt="sun">
+                    <h3 class="services__list-title">
+                        Structuring corporate relationships
+                    </h3>
+                    <div class="services__list-desc">
+                        Instead of just providing legal services, we will hire a lawyer or a whole team that will fit
+                        into
+                        the
+                        daily life of your company.
+                    </div>
                 </div>
-            </article>
 
-            <article class="services__list">
-                <img src="img/Icon_hummer.svg" alt="hummer">
-                <h3 class="services__list-title">
-                    Judicial representation
-                </h3>
-                <div class="services__list-desc">
-                    Is it a small, medium-sized company or a market leader? Local business or multinational company? Do
-                    you
-                    have your own legal department or not?
+                <div class="services__list">
+                    <img src="img/Icon_hands.svg" alt="hands">
+                    <h3 class="services__list-title">
+                        Building contractual relations
+                    </h3>
+                    <div class="services__list-desc">
+                        Instead of just providing legal services, we will hire a lawyer or a whole team that will fit
+                        into
+                        the
+                        daily life of your company.
+                    </div>
+                </div>
+
+                <div class="services__list">
+                    <img src="img/Icon_shield.svg" alt="shield">
+                    <h3 class="services__list-title">
+                        Protection of business, intellectual property
+                    </h3>
+                    <div class="services__list-desc">
+                        And all the other time he will work on new diverse projects, so he will definitely not stop in
+                        professional development. One way or another, all Axon Partners will work for you instead of a
+                        corporate
+                        lawyer.
+                    </div>
+                </div>
+
+                <div class="services__list">
+                    <img src="img/Icon_hummer.svg" alt="hummer">
+                    <h3 class="services__list-title">
+                        Judicial representation
+                    </h3>
+                    <div class="services__list-desc">
+                        Is it a small, medium-sized company or a market leader? Local business or multinational company?
+                        Do
+                        you
+                        have your own legal department or not?
+                    </div>
                 </div>
             </article>
         </section>
@@ -192,7 +233,8 @@
     <div class="color_block">
         <section class="center team" id="team">
             <div class="team__box">
-                <img src="img/photo_man_mobile.jpg" alt="photo_man">
+                <img class="photo_man_mobile" src="img/photo_man_mobile.jpg" alt="photo_man_mobile">
+                <img class="photo_man" src="img/photo_man.jpg" alt="photo_man">
                 <div class="team__title">
                     <a href="#">
                         <h6 class="team__people">команда</h6>
@@ -233,24 +275,47 @@
                 They already trust us
             </h6>
             <div class="companies__logo-container">
-                <a href="index.html" target="_blank" class="companies_logo-card">
-                    <img src="img/hillel.svg" alt="hillel">
-                </a>
-                <a href="index.html" target="_blank" class="companies_logo-card">
-                    <img src="img/wannabiz.svg" alt="wannabiz">
-                </a>
-                <a href="index.html" target="_blank" class="companies_logo-card">
-                    <img src="img/tapgerine.svg" alt="tapgerine">
-                </a>
-                <a href="index.html" target="_blank" class="companies_logo-card">
-                    <img src="img/3dlook.svg" alt="3dlook">
-                </a>
-                <a href="index.html" target="_blank" class="companies_logo-card">
-                    <img src="img/orangear.svg" alt="orangegear">
-                </a>
-                <a href="index.html" target="_blank" class="companies_logo-card">
-                    <img src="img/adtelligent.svg" alt="abtelligent">
-                </a>
+                <div class="companies__logo-container-1">
+                    <a href="index.html" target="_blank" class="companies_logo-card">
+                        <img src="img/hillel.svg" alt="hillel">
+                    </a>
+                    <a href="index.html" target="_blank" class="companies_logo-card">
+                        <img src="img/wannabiz.svg" alt="wannabiz">
+                    </a>
+                    <a href="index.html" target="_blank" class="companies_logo-card">
+                        <img src="img/tapgerine.svg" alt="tapgerine">
+                    </a>
+                    <a href="index.html" target="_blank" class="companies_logo-card">
+                        <img src="img/3dlook.svg" alt="3dlook">
+                    </a>
+                    <a href="index.html" target="_blank" class="companies_logo-card">
+                        <img src="img/orangear.svg" alt="orangegear">
+                    </a>
+                    <a href="index.html" target="_blank" class="companies_logo-card">
+                        <img src="img/adtelligent.svg" alt="abtelligent">
+                    </a>
+                </div>
+
+                <div class="companies__logo-container-2">
+                    <a href="index.html" target="_blank" class="companies_logo-card">
+                        <img src="img/clickky.svg" alt="clickky">
+                    </a>
+                    <a href="index.html" target="_blank" class="companies_logo-card">
+                        <img src="img/ecoleasing.svg" alt="ecoleasing">
+                    </a>
+                    <a href="index.html" target="_blank" class="companies_logo-card">
+                        <img src="img/infratek.svg" alt="infratek">
+                    </a>
+                    <a href="index.html" target="_blank" class="companies_logo-card">
+                        <img src="img/citypark.svg" alt="citypark">
+                    </a>
+                    <a href="index.html" target="_blank" class="companies_logo-card">
+                        <img src="img/artprintstudio.svg" alt="artprintstudio">
+                    </a>
+                    <a href="index.html" target="_blank" class="companies_logo-card">
+                        <img src="img/ultimatecard.svg" alt="ultimatecard.svg">
+                    </a>
+                </div>
             </div>
         </section>
         <section class="center publications">
@@ -268,65 +333,74 @@
             <h2 class="publications__main">
                 We have <br> something to tell
             </h2>
-            <div class="publications__article">
-                <img src="img/foto_gadjets.jpg" alt="foto_gadjets">
-                <h4 class="publications__article-name">
-                    Equity associate
-                </h4>
-                <p class="publications__article-date">
-                    April 22
-                </p>
-                <p class="publications__article-desc">
-                    I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents
-                    told
-                    me that if I…
-                </p>
-            </div>
-            <div class="publications__article">
-                <img src="img/gdpr.svg" alt="gdpr">
-                <h4 class="publications__article-name">
-                    Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR
-                </h4>
-                <p class="publications__article-date">
-                    September 29
-                </p>
-                <p class="publications__article-desc">
-                    And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January
-                    21
-                    National Commission for Data Protection.
-                </p>
-            </div>
+            <div class="publications__box">
+                <div class="publications__article">
+                    <img src="img/foto_gadjets.jpg" alt="foto_gadjets">
+                    <h4 class="publications__article-name">
+                        Equity associate
+                    </h4>
+                    <p class="publications__article-date">
+                        April 22
+                    </p>
+                    <p class="publications__article-desc">
+                        I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my
+                        parents
+                        told
+                        me that if I…
+                    </p>
+                </div>
+                <div class="publications__article">
+                    <img src="img/gdpr.svg" alt="gdpr">
+                    <h4 class="publications__article-name">
+                        Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR
+                    </h4>
+                    <p class="publications__article-date">
+                        September 29
+                    </p>
+                    <p class="publications__article-desc">
+                        And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua
+                        January
+                        21
+                        National Commission for Data Protection.
+                    </p>
+                </div>
 
-            <div class="publications__article">
-                <img src="img/foto_people.jpg" alt="foto_people">
-                <h4 class="publications__article-name">
-                    Millennial Testament
-                </h4>
-                <p class="publications__article-date">
-                    August 19
-                </p>
-                <p class="publications__article-desc">
-                    What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy
-                    of
-                    the Ukrainian generation X looks like this: an apartment in…
-                </p>
+                <div class="publications__article">
+                    <p class="photo_people">
+                        <img src="img/foto_people.jpg" alt="foto_people">
+                    </p>
+                    <h4 class="publications__article-name">
+                        Millennial Testament
+                    </h4>
+                    <p class="publications__article-date">
+                        August 19
+                    </p>
+                    <p class="publications__article-desc">
+                        What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical
+                        legacy
+                        of
+                        the Ukrainian generation X looks like this: an apartment in…
+                    </p>
+                </div>
             </div>
         </section>
     </div>
 </main>
 
 <footer class="footer center color_block">
-    <div class="footer__address">
-        Kyiv, Mechnikova str., 14/1
+    <div class="footer__address-map-box">
+        <div class="footer__address">
+            Kyiv, Mechnikova str., 14/1
+        </div>
+        <a class="footer__map" target="_blank" href="https://www.google.com/maps">
+            On map
+        </a>
     </div>
-    <a class="footer__map" target="_blank" href="https://www.google.com/maps">
-        On map
-    </a>
     <div class="footer__contacts">
         <a href="https://www.facebook.com/">
-        <svg class="footer__contacts-icon">
-            <use xlink:href="img/sprite.svg#Facebook-Footer"></use>
-        </svg>
+            <svg class="footer__contacts-icon">
+                <use xlink:href="img/sprite.svg#Facebook-Footer"></use>
+            </svg>
         </a>
         <p class="footer__contacts-tel">
             <a class="footer__contacts-number" href="tel:0800 211 927">0800 211 927</a>
