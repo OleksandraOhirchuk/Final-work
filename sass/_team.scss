@@ -1,12 +1,12 @@
 @media screen and (min-width: 315px) {
   .team {
-background-color: #fff;
+    background-color: #fff;
 
 
     & > img {
-      width: 100%;
       padding-right: 0;
       padding-left: 0;
+      border-radius: 12px 12px 0 0;
     }
 
     &__box {
@@ -29,6 +29,7 @@ background-color: #fff;
 
 
     }
+
     &__title,
     &__text,
     &__subscribe,
@@ -44,7 +45,7 @@ background-color: #fff;
       color: #24A3FF;
       letter-spacing: 1px;
       text-transform: uppercase;
-      padding-bottom: 5px;
+
     }
 
     &__text {
@@ -72,41 +73,42 @@ background-color: #fff;
   }
 
 
-.btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  gap: 15px;
+  .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
 
-  &__circle {
-    border-radius: 50%;
-    display: block;
-    cursor: pointer;
-    background-color: #24A3FF;
-    width: 16px;
-    height: 16px;
-    border: none;
+    &__circle {
+      border-radius: 50%;
+      display: block;
+      cursor: pointer;
+      background-color: #24A3FF;
+      width: 16px;
+      height: 16px;
+      border: none;
+    }
+
   }
 
-}
+  .btn__slider {
+    opacity: 0.2;
+  }
 
-.btn__slider {
-  opacity: 0.2;
-}
-
-.btn__slider:visited,
-.btn__slider:hover {
-  background-color: #24A3FF;
-  opacity: 1;
-}
+  .btn__slider:visited,
+  .btn__slider:hover {
+    background-color: #24A3FF;
+    opacity: 1;
+  }
   .photo_man {
     display: none;
   }
 
 }
-@media screen and (min-width: 520px) {
+
+@media screen and (min-width: 750px) {
 
   .photo_man_mobile {
     display: none;
@@ -125,6 +127,90 @@ background-color: #fff;
 
   }
 }
+
+@media screen and (min-width: 920px) {
+
+  .photo_man {
+    display: none;
+
+  }
+  .photo_man_mobile {
+    display: unset;
+    width: 100%;
+    grid-row: 1 / span 5;
+    margin: auto 0;
+
+  }
+  .team__box {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 0;
+
+
+  }
+  .team__subscribe {
+    margin-top: 30px;
+    margin-bottom: 6px;
+
+  }
+  .team__job {
+
+  }
+  .team__text {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .photo_man_mobile {
+    display: none;
+  }
+  .photo_man {
+    display: unset;
+    grid-row: 1 / span 4;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+
+  }
+
+  .team__box {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    margin: 0;
+
+
+  }
+  .team__text {
+    grid-row: 2;
+    grid-column: 2;
+    padding: 0 30px 30px 30px;
+
+  }
+  .team__job {
+    grid-row: 4;
+    grid-column: 2;
+    padding-bottom: 30px;
+    margin: 0;
+  }
+  .team__title {
+    grid-row: 1;
+    grid-column: 2;
+    padding-top: 30px;
+    margin: 0;
+  }
+  .team__subscribe {
+    grid-row: 3;
+    grid-column: 2;
+    margin: 0;
+    padding-bottom: 6px;
+  }
+}
+
+
 
 
 

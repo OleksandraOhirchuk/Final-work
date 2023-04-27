@@ -6,7 +6,6 @@
     margin: 0;
 
 
-
     &__list {
       position: absolute;
       top: 630px;
@@ -15,14 +14,15 @@
       flex-direction: row;
       justify-content: space-between;
       list-style: none;
-      padding: 0 30px 30px;
-      margin: 0;
+      padding-bottom: 30px;
       gap: 30px;
       overflow-x: auto;
       white-space: nowrap;
       box-sizing: border-box;
       width: 100%;
       z-index: 1;
+      padding-inline-start: 30px;
+
 
 
 
@@ -38,7 +38,7 @@
     }
 
     &__desc {
-      margin: 730px 30px 30px 30px;
+      margin: 730px 0 30px 0;
       display: flex;
       flex-direction: column;
       gap: 30px;
@@ -62,19 +62,69 @@
     }
 
   }
+  .offer__list li:first-child a.offer__list-link {
+    color: #F0145A;
+  }
 
 }
 
-@media screen and (min-width: 520px) {
-   .offer__list {
-     top: 1084px;
-     margin: 0;
-padding-left: 60px;
-   }
+@media screen and (min-width: 750px) {
+  .offer__list {
+    top: 1084px;
+    margin: 0;
+
+  }
   .offer__desc {
-    margin: 1230px 60px 0;
- &-title {
-   font-size: 30px;
- }
+    margin-top: 1230px;
+
+    &-title {
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 920px) {
+
+  .offer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+    &__desc {
+      margin-top: 843px;
+      padding-left: 60px;
+    }
+
+
+    .offer__list {
+      flex-direction: column;
+      top: 843px;
+      width: unset;
+      padding-right: 60px;
+      align-items: flex-end;
+      overflow-x: unset;
+
+      &-link {
+        font-size: 38px;
+      }
+    }
+
+    &__list:after {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 303px;
+
+    }
+
+
+
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .offer__list {
+    padding-bottom: 75px;
   }
 }

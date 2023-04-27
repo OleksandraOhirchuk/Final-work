@@ -1,14 +1,10 @@
 @media screen and (min-width: 315px) {
-  .nav__address,
-  .nav__dot,
-  .nav__facebook {
-    display: none;
-  }
-  .burger_menu_none {
-    display: none;
-  }
+  .logo_title-about {
+    display: unset;
+    color: #323264;
 
-  .nav {
+  }
+  .nav_about {
     position: absolute;
     left: 0;
     top: 0;
@@ -17,13 +13,12 @@
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    background-color: rgba(245, 245, 250, 0.2);
+    background-color: #F5F5FA;
     width: 100%;
     height: 45px;
     z-index: 99;
   }
-
-  .nav_list {
+  .nav_list-about {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,65 +27,67 @@
     list-style: none;
     padding-inline-start: 0;
 
+
   }
-  .nav_link {
+  .nav_link-about {
     text-decoration: none;
-    color: #fff;
+    color: #B3B3BA;
     line-height: var(--main-line-height);
     font-size: 12px;
     letter-spacing: 1px;
 
   }
-  .nav_link:hover {
+  .nav_link-about:hover {
     background-color: #F0145A;
     padding: 5px 7px;
     border-radius: 8px;
   }
-
-  .contacts_phone {
+  .contacts_phone-about {
     font-size: 16px;
     font-weight: 700;
     line-height: var(--main-line-height);
     margin: 0;
     text-decoration: none;
-    color: #fff;
+    color: #B3B3BA;;
     white-space: nowrap;
 
   }
-  .nav_list li:last-child {
+  .nav_list-about li:last-child a.nav_link-about {
     background-color: #F0145A;
     padding: 5px 7px;
     border-radius: 8px;
+    color: #fff;
   }
-  .header {
+  .header_about {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
     padding-top: 60px;
-    padding-bottom: 15px;
     box-sizing: border-box;
 
 
     &__toggler {
       width: 24px;
-      height: 16px;
+      height: 15px;
       display: block;
       position: relative;
-      border: 10px solid transparent;
       z-index: 99;
 
     }
 
+    &__toggler:hover {
+      background-color: #E6E6F0;
+      border-radius: 8px;
+      width: 32px;
+      height: 32px;
+    }
 
-    & span {
-      background: #fff;
+    span {
+      background: #323264;
       width: 100%;
-      height: 2px;
+      height: 1px;
       display: block;
       position: absolute;
       left: 0;
@@ -108,7 +105,7 @@
       }
     }
 
-    &__nav {
+    &__nav-about {
       position: fixed;
       left: 0;
       bottom: 0;
@@ -201,214 +198,189 @@
       cursor: pointer;
     }
 
-    &__slogan {
-      display: block;
-      font-size: 38px;
-      font-weight: 700;
-      color: #fff;
-      text-align: center;
-      max-width: 100%;
-      margin-bottom: 159px;
-
-    }
-
-    &__title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 139px;
-
-
-    }
 
   }
-  .logo_icon {
-    fill: #fff;
+
+  .logo_icon-about {
+    fill: #323264;
     display: block;
     width: 69px;
     height: 32px;
   }
 
-  .logo_slash {
-    display: block;
-    width: 12px;
-    height: 26px;
+  .header__toggler:focus, .header__toggler:hover {
+    background-color: #E6E6F0;
+    cursor: pointer;
   }
-
-  .logo_title {
-    font-weight: 400;
-    line-height: 1.2;
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
+  .header__toggler-list:focus, .header__toggler-list:hover {
+    background-color: #E6E6F0;
+    cursor: pointer;
   }
-  .logo_group {
+  .btn-about {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 4px;
-  }
-  .logo_slash__icon {
-    Width: 12px;
-    Height: 26px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    &__circle {
+      border-radius: 50%;
+      display: block;
+      cursor: pointer;
+      background-color: #24A3FF;
+      width: 16px;
+      height: 16px;
+      border: none;
+    }
+
   }
 
-  .header__toggler:focus,
-  .header__toggler:hover {
-    background-color: #E6E6F0;
-    border-radius: 8px;
-    cursor: pointer;
+  .btn__slider {
+    opacity: 0.2;
   }
 
-  .scroll__vert {
-    border: 2px solid #fff;
-    border-radius: 50%;
-    padding: 16px 10px 13px 10px;
-    stroke: white;
+  .btn__slider:visited,
+  .btn__slider:hover {
+    background-color: #24A3FF;
+    opacity: 1;
   }
-  .scroll__vert:hover {
-    border: 2px solid #F0145A;
-    stroke: #F0145A;
-    cursor: pointer;
+
+  //about
+
+  .about_title {
+    font-weight: 700;
+    font-size: 30px;
+    color: #F0145A;
+    margin-top: 30px;
+
+  }
+  .about_text {
+
+    color: #000;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 1.6;
+    margin-top: 28px;
+    margin-bottom: 30px;
+
+  }
+
+  //  numbers
+
+  .numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border-left: 4px solid #E6E6F0;
+
+
+    &__years,
+    &__clients,
+    &__hours {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 30px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    &__years p,
+    &__clients p,
+    &__hours p {
+      margin: 0;
+    }
+
+  }
+
+  //  team
+
+
+  .team_about__text {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 1.6;
+    color: #000;
+
+
+  }
+  .team_about__title {
+    color: #EF8080;
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: 60px;
+  }
+
+
+  //achievements
+
+  .achievements {
+    background-color: #F5F5FA;
+  }
+  .achievements__title {
+    color: #323264;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+
+  }
+
+  .achievements__logo {
+    padding: 25px 105px;
+    background-color: #fff;
+    margin: 30px auto;
+  }
+
+  //  footer
+
+  .footer_about {
+    background-color: #F5F5FA;
+    gap: 30px;
+
   }
 }
 
 @media screen and (min-width: 750px) {
 
-  .nav__address,
-  .nav__dot,
-  .nav__facebook,
-  .burger_menu_none {
-    display: unset;
-  }
-  .header__nav-list-wrapper,
-  .header__toggler,
-  .logo_title,
-  .nav__closebtn,
-  .visually-hidden,
-  .burger_menu {
-    display: none;
-  }
-
-  .nav {
+  .header__nav-list-about {
     display: flex;
-    justify-content: left;
-    padding-top: 50px;
-    height: 25px;
-    gap: 6px;
-    background-color: rgba(245, 245, 250, 0);
-  }
-
-  .nav_list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-  }
-  .nav__address {
-    white-space: nowrap;
-    color: #B3B3BA;
-    font-weight: 400;
-    font-size: 16px;
-  }
-  .nav__dot {
-    fill: #E6E6F0;
-  }
-  .nav__facebook-link {
-    fill: #fff;
-  }
-  .nav__facebook-icon {
-    width: 24px;
-    height: 24px;
-  }
-  .logo_icon {
-    width: 130px;
-    height: 60px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .logo_slash {
-    display: none;
-  }
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-
-  }
-
-
-  .header__slogan {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 417px;
-
-  }
-  .header__title {
-    display: flex;
-    margin: 274px auto 0;
-
-  }
-  .header__nav-list {
     flex-direction: row;
     justify-content: left;
     gap: 15px;
-    margin-top: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    list-style: none;
+    padding-inline-start: 0;
 
 
   }
-  .header__nav-link {
-    color: #fff;
+  .header__nav-link-about {
+
+    color: #24A3FF;
     background-color: unset;
     white-space: nowrap;
     font-size: 16px;
+    font-weight: 700;
+    font-size: 16px;
 
   }
-}
-
-@media screen and (min-width: 920px) {
-
-  .nav {
-    justify-content: flex-end;
+  .logo_slash-about {
+    display: unset;
   }
-  .logo_icon {
-    margin: 0;
-    padding: 0;
-
-  }
-  .header {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-  }
-  .header__slogan {
-    margin-bottom: 289px;
-  }
-  .header__title {
-    margin: 233px auto 0;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .header {
-    display: flex;
-    align-items: flex-start;
+  .header_about {
     flex-direction: column;
-
-  }
-
-  .header__slogan {
-    margin-bottom: 289px;
-    top: 307px;
-
-
+    justify-content: flex-start;
+    align-items: flex-start;
 
   }
 }
 
-@media screen and (min-width: 1600px) {
-  .header {
-    display: flex;
 
-  }
-}

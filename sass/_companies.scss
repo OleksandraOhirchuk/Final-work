@@ -27,25 +27,38 @@
 
     }
   }
-}
-  .companies__logo-container-2 {
+
+  .companies_logo-card:nth-child(n+7) {
     display: none;
+
+  }
 }
-@media screen and (min-width: 520px) {
-  .companies__logo-container-2 {
+@media screen and (min-width: 750px) {
+  .companies_logo-card:nth-child(n+7) {
     display: unset;
 
   }
-  .companies__logo-container-1 {
+  .companies__logo-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-  .companies__logo-container-2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 120px);
   }
 
+  .companies_logo-card img {
+    object-fit: cover;
+    height: 120px;
+    overflow: hidden;
+
+  }
+
+
 }
+@media screen and (min-width: 920px) {
+  .companies__logo-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  }
 

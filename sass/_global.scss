@@ -37,6 +37,7 @@
     background: url("/img/h_symbol.svg") no-repeat left top,var(--background-gradient);
     border-radius: 0 0 12px 12px;
 
+
   }
   .color_block {
     background-color: #F5F5FA;
@@ -67,10 +68,17 @@
 }
 
 @media screen and (min-width: 520px) {
+  .center {
+    padding-left: calc(50vw - 245px);
+    padding-right: calc(50vw - 245px);
+  }
+}
+
+@media screen and (min-width: 750px) {
 
   .center {
-    padding-left: calc(50vw - 384px);
-    padding-right: calc(50vw - 384px);
+    padding-left: calc(50vw - 324px);
+    padding-right: calc(50vw - 324px);
   }
   .gradient_block {
     background: url("/img/h_symbol_tablet.svg") no-repeat left top, var(--background-gradient);
@@ -78,8 +86,51 @@
   }
 }
 
+@media screen and (min-width: 920px) {
+  .center {
+    padding-left: calc(50vw - 452px);
+    padding-right: calc(50vw - 452px);
+  }
+  .gradient_block {
+    background: url("/img/h_symbol_tablet_hd.svg") no-repeat center top, var(--background-gradient);
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
 
 
+  .center {
+    padding-left: calc(50vw - 540px);
+    padding-right: calc(50vw - 540px);
+  }
+}
+@media screen and (min-width: 1400px) {
+
+
+  .center {
+    padding-left: calc(50vw - 640px);
+    padding-right: calc(50vw - 640px);
+  }
+}
+
+
+@media screen and (min-width: 1650px) {
+
+
+  .center {
+    padding-left: calc(50vw - 700px);
+    padding-right: calc(50vw - 700px);
+  }
+}
+@media screen and (min-width: 1900px) {
+
+
+    .center {
+      padding-left: calc(50vw - 800px);
+      padding-right: calc(50vw - 800px);
+    }
+}
 
 
 
